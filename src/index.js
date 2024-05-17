@@ -27,15 +27,15 @@ export default class ScrollCalendar extends Component {
     });
   }
 
-  componentDidMount() {
-    this.setSelectedDate(this.props.selectedDate);
-    let element = document.getElementById(
-      moment(this.props.selectedDate, 'DD/MMM/YYYY').format('MMMM-YYYY')
-    );
-    if (element) {
-      element.scrollIntoView();
-    }
-  }
+  // componentDidMount() {
+  //   this.setSelectedDate(this.props.selectedDate);
+  //   let element = document.getElementById(
+  //     moment(this.props.selectedDate, 'DD/MMM/YYYY').format('MMMM-YYYY')
+  //   );
+  //   if (element) {
+  //     element.scrollIntoView();
+  //   }
+  // }
 
   componentWillReceiveProps(props) {
     if (props.selectedDate) {
